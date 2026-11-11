@@ -23,7 +23,7 @@
       <nav class="main-nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#approach">Our approach</a>
-        <a href="#careers">Careers</a>
+        <a href="/careers.html">Careers</a>
         <a class="nav-contact" href="mailto:info@netly.ai">Get in touch <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
@@ -42,54 +42,87 @@
         <div class="hero-note"><span class="note-mark">N</span><span>Curious by nature. Thoughtful by design.</span></div>
       </div>
 
-      <div class="hero-art" aria-label="People connected through ideas and technology" role="img">
-        <svg viewBox="0 0 600 540" xmlns="http://www.w3.org/2000/svg">
+      <div class="hero-art" aria-label="Animated illustration of a business request moving through coordinated AI agents and becoming an operational insight, with a person guiding the outcome" role="img">
+        <svg viewBox="0 0 620 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <defs>
-            <radialGradient id="wash" cx="50%" cy="45%" r="58%">
-              <stop offset="0" stop-color="#f3e2b9"/>
-              <stop offset=".58" stop-color="#edf0e6"/>
+            <radialGradient id="workflow-wash" cx="52%" cy="48%" r="58%">
+              <stop offset="0" stop-color="#f2dfb8"/>
+              <stop offset=".58" stop-color="#e9eee4"/>
               <stop offset="1" stop-color="#f7f7f3" stop-opacity="0"/>
             </radialGradient>
-            <linearGradient id="thread" x1="0" x2="1" y1="0" y2="1">
-              <stop stop-color="#b5c6a8"/>
-              <stop offset="1" stop-color="#e6b04d"/>
+            <filter id="workflow-shadow" x="-20%" y="-20%" width="140%" height="150%">
+              <feDropShadow dx="0" dy="16" stdDeviation="17" flood-color="#2c4939" flood-opacity=".10"/>
+            </filter>
+            <linearGradient id="workflow-line" x1="0" y1="0" x2="0" y2="1">
+              <stop stop-color="#d9a33e"/>
+              <stop offset="1" stop-color="#6a9a77"/>
             </linearGradient>
           </defs>
-          <circle cx="302" cy="264" r="250" fill="url(#wash)"/>
-          <circle class="orbit orbit-one" cx="300" cy="265" r="185"/>
-          <ellipse class="orbit orbit-two" cx="300" cy="265" rx="225" ry="122" transform="rotate(-32 300 265)"/>
-          <path class="thread" d="M139 152 255 239M445 132 339 230M131 381 256 296M469 379 346 298M139 152 445 132 469 379 131 381Z"/>
-          <circle class="spark spark-one" cx="300" cy="265" r="111"/>
-          <circle cx="300" cy="265" r="88" fill="#fffefa"/>
-          <circle cx="300" cy="232" r="25" fill="#f0bd53"/>
-          <path d="M249 312c5-35 22-53 51-53s46 18 51 53" fill="#204c43"/>
-          <circle cx="300" cy="265" r="111" fill="none" stroke="#d7ddcf" stroke-width="1"/>
-          <text x="300" y="358" text-anchor="middle" class="art-label">HUMAN POTENTIAL, AMPLIFIED</text>
-          <g class="person person-a">
-            <circle cx="139" cy="137" r="35" fill="#fffefa" stroke="#dce2d4" stroke-width="2"/>
-            <circle cx="139" cy="129" r="10" fill="#d88a68"/><path d="M120 157c2-13 9-20 19-20s17 7 19 20" fill="#769078"/>
+          <circle cx="316" cy="249" r="245" fill="url(#workflow-wash)"/>
+          <circle class="workflow-halo" cx="316" cy="249" r="214" fill="none" stroke="#dbe2d5" stroke-width="1" stroke-dasharray="2 9"/>
+          <path class="workflow-orbit" d="M68 182C31 256 53 361 122 408M510 92c46 35 69 90 70 145"/>
+          <g class="workflow-board" filter="url(#workflow-shadow)">
+            <rect x="75" y="37" width="462" height="422" rx="24" fill="#fffefa" stroke="#e2e8df"/>
+            <path d="M75 102h462" stroke="#e9ede5"/>
+            <circle cx="103" cy="70" r="4" fill="#d98267"/>
+            <circle cx="117" cy="70" r="4" fill="#e4bd65"/>
+            <circle cx="131" cy="70" r="4" fill="#91ad8d"/>
+            <text x="154" y="74" class="workflow-kicker">AGENTIC ORCHESTRATION</text>
+            <circle class="live-dot" cx="476" cy="70" r="4"/>
+            <text x="488" y="74" class="workflow-live">ACTIVE</text>
+
+            <path class="workflow-rail" d="M111 147v178"/>
+            <circle cx="111" cy="146" r="9" class="rail-node node-one"/>
+            <circle cx="111" cy="236" r="9" class="rail-node node-two"/>
+            <circle cx="111" cy="326" r="9" class="rail-node node-three"/>
+            <path d="M111 147v178" class="rail-track"/>
+            <circle class="workflow-particle" cx="111" cy="147" r="4" fill="#d99839"/>
+
+            <g class="workflow-step workflow-step-one">
+              <rect x="137" y="116" width="365" height="62" rx="13" class="step-surface" fill="#fcfbf7" stroke="#e8ece5" stroke-width="1"/>
+              <rect x="151" y="130" width="34" height="34" rx="10" fill="#f5ead0"/>
+              <path d="M162 138h12M162 144h12M162 150h8" stroke="#ac7930" stroke-width="1.8" stroke-linecap="round"/>
+              <text x="198" y="141" class="step-eyebrow">01 · REQUEST</text>
+              <text x="198" y="159" class="step-title">A clear goal enters</text>
+              <path d="m473 145 5 5 9-11" fill="none" stroke="#64836b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+
+            <g class="workflow-step workflow-step-two">
+              <rect x="137" y="206" width="365" height="62" rx="13" class="step-surface" fill="#fcfbf7" stroke="#e8ece5" stroke-width="1"/>
+              <rect x="151" y="220" width="34" height="34" rx="10" fill="#e7eee4"/>
+              <circle cx="162" cy="237" r="3" fill="#537b63"/>
+              <circle cx="175" cy="229" r="3" fill="#d9a33e"/>
+              <circle cx="175" cy="245" r="3" fill="#537b63"/>
+              <path d="m164 236 8-6m-8 8 8 6" stroke="#77927b" stroke-width="1.4"/>
+              <text x="198" y="231" class="step-eyebrow">02 · ORCHESTRATION</text>
+              <text x="198" y="249" class="step-title">Agents move work forward</text>
+              <path d="M465 239h20m-6-6 6 6-6 6" fill="none" stroke="#64836b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+
+            <g class="workflow-step workflow-step-three">
+              <rect x="137" y="296" width="365" height="62" rx="13" class="step-surface" fill="#fcfbf7" stroke="#e8ece5" stroke-width="1"/>
+              <rect x="151" y="310" width="34" height="34" rx="10" fill="#f7e7df"/>
+              <path d="M159 336v-7h4v7m3 0v-12h4v12m3 0v-18h4v18" fill="none" stroke="#bd7658" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              <text x="198" y="321" class="step-eyebrow">03 · OPERATIONAL INSIGHT</text>
+              <text x="198" y="339" class="step-title">The next action comes into view</text>
+              <circle cx="480" cy="327" r="9" fill="#e4f0e5"/>
+              <path d="m476 327 3 3 5-6" fill="none" stroke="#517958" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+
+            <path d="M103 382h407" stroke="#e9ede5"/>
+            <circle cx="108" cy="410" r="8" fill="#e9efdf"/>
+            <path d="M104 410h8m-4-4v8" stroke="#54775b" stroke-width="1.4" stroke-linecap="round"/>
+            <text x="125" y="414" class="workflow-foot">PEOPLE GUIDE THE OUTCOME</text>
           </g>
-          <g class="person person-b">
-            <circle cx="445" cy="117" r="35" fill="#fffefa" stroke="#dce2d4" stroke-width="2"/>
-            <circle cx="445" cy="109" r="10" fill="#835d4c"/><path d="M426 137c2-13 9-20 19-20s17 7 19 20" fill="#e5b24d"/>
-          </g>
-          <g class="person person-c">
-            <circle cx="131" cy="396" r="35" fill="#fffefa" stroke="#dce2d4" stroke-width="2"/>
-            <circle cx="131" cy="388" r="10" fill="#e1b783"/><path d="M112 416c2-13 9-20 19-20s17 7 19 20" fill="#627993"/>
-          </g>
-          <g class="person person-d">
-            <circle cx="469" cy="396" r="35" fill="#fffefa" stroke="#dce2d4" stroke-width="2"/>
-            <circle cx="469" cy="388" r="10" fill="#765244"/><path d="M450 416c2-13 9-20 19-20s17 7 19 20" fill="#bd7660"/>
-          </g>
-          <g class="idea idea-one"><circle cx="215" cy="189" r="5"/><circle cx="385" cy="177" r="5"/><circle cx="209" cy="337" r="5"/><circle cx="391" cy="341" r="5"/></g>
-          <g class="art-card">
-            <rect x="366" y="262" width="135" height="66" rx="15" fill="#fffefa" stroke="#e2e5dc"/>
-            <circle cx="388" cy="285" r="7" fill="#e6b04d"/>
-            <path d="M405 284h72M383 304h79" stroke="#9ca99c" stroke-width="4" stroke-linecap="round"/>
-            <path d="M383 316h54" stroke="#d5ddd1" stroke-width="4" stroke-linecap="round"/>
+          <g class="human-chip">
+            <rect x="363" y="395" width="199" height="72" rx="16" fill="#fffefa" stroke="#e3e8df"/>
+            <circle cx="389" cy="431" r="17" fill="#f1dfbd"/>
+            <circle cx="389" cy="426" r="5" fill="#a96d51"/>
+            <path d="M379 439c2-7 5-10 10-10s8 3 10 10" fill="#557a63"/>
+            <text x="416" y="426" class="chip-title">Human direction</text>
+            <text x="416" y="443" class="chip-copy">Outcome stays yours</text>
           </g>
         </svg>
-        <div class="art-caption"><span class="caption-icon">✳</span><span>People and AI,<br>moving work forward.</span></div>
       </div>
       <div class="hero-scroll" aria-hidden="true"><span></span> A little further</div>
     </section>
@@ -110,19 +143,41 @@
         <div class="pillar-number">01 <span>— WHO</span></div>
         <h3>People set the direction.</h3>
         <p>Agents can take on the steps. People bring the goals, judgment, and imagination that give those steps meaning.</p>
-        <div class="pillar-symbol symbol-people" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="pillar-symbol" aria-hidden="true"><svg class="pillar-art art-human" viewBox="0 0 120 90">
+          <ellipse class="human-orbit" cx="60" cy="46" rx="46" ry="23"/>
+          <circle class="human-halo" cx="60" cy="42" r="28"/>
+          <circle cx="60" cy="34" r="8" fill="#d9916b"/>
+          <path d="M43 62c2-13 8-20 17-20s15 7 17 20" fill="#6d8b70"/>
+          <circle class="orbit-node node-left" cx="17" cy="46" r="4" fill="#dfb04e"/>
+          <circle class="orbit-node node-right" cx="103" cy="46" r="4" fill="#d78064"/>
+        </svg></div>
       </article>
       <article class="pillar">
         <div class="pillar-number">02 <span>— WHY</span></div>
         <h3>Multiply human potential.</h3>
         <p>Automation should return time and attention to people, giving teams more capacity to think, create, and care.</p>
-        <div class="pillar-symbol symbol-sun" aria-hidden="true"><span>✳</span></div>
+        <div class="pillar-symbol" aria-hidden="true"><svg class="pillar-art art-orchestration" viewBox="0 0 120 90">
+          <path class="mini-network" d="M60 45 26 24m34 21 34-21M60 45 26 66m34-21 34 21"/>
+          <circle class="mini-node node-a" cx="26" cy="24" r="9"/>
+          <circle class="mini-node node-b" cx="94" cy="24" r="9"/>
+          <circle class="mini-node node-c" cx="26" cy="66" r="9"/>
+          <circle class="mini-node node-d" cx="94" cy="66" r="9"/>
+          <circle class="mini-center" cx="60" cy="45" r="17"/>
+          <path d="m60 35 2.7 7.3L70 45l-7.3 2.7L60 55l-2.7-7.3L50 45l7.3-2.7Z" fill="#fffefa"/>
+        </svg></div>
       </article>
       <article class="pillar">
         <div class="pillar-number">03 <span>— WHAT</span></div>
         <h3>Workflows that move.</h3>
         <p>AI agents connect tools, information, and actions to carry work forward with people guiding the outcome.</p>
-        <div class="pillar-symbol symbol-orbit" aria-hidden="true"><span></span></div>
+        <div class="pillar-symbol" aria-hidden="true"><svg class="pillar-art art-insight" viewBox="0 0 120 90">
+          <path d="M15 69h91" stroke="#bac8b9" stroke-width="1.5" stroke-linecap="round"/>
+          <rect class="insight-bar bar-one" x="25" y="49" width="13" height="20" rx="4" fill="#9ab09a"/>
+          <rect class="insight-bar bar-two" x="49" y="37" width="13" height="32" rx="4" fill="#d7b25f"/>
+          <rect class="insight-bar bar-three" x="73" y="24" width="13" height="45" rx="4" fill="#719477"/>
+          <path class="insight-line" d="m20 46 28-13 23 3 27-21" fill="none" stroke="#c97e61" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="98" cy="15" r="4" fill="#c97e61"/>
+        </svg></div>
       </article>
     </section>
 
@@ -157,14 +212,14 @@
           <p class="eyebrow">CAREERS AT NETLY</p>
           <h2>Build AI that gives people more room to <em>do their best work.</em></h2>
           <p>Join a curious, multidisciplinary team shaping useful agentic workflows and thoughtful human-AI collaboration.</p>
-          <a class="button button-light" href="mailto:info@netly.ai?subject=Careers%20at%20Netly%20AI">Explore opportunities <span aria-hidden="true">↗</span></a>
+          <a class="button button-light" href="/careers.html">Explore opportunities <span aria-hidden="true">↗</span></a>
         </div>
         <article class="career-card">
           <div class="career-topline"><span class="career-mark mark-netly">N</span><span class="career-label">OPEN AREAS</span></div>
           <h3>Bring what you do best.</h3>
           <p>We welcome people who want to make AI useful, reliable, and more human-centered.</p>
           <div class="role-tags" aria-label="Career areas"><span>AI / ML</span><span>Software engineering</span><span>Product design</span><span>Research</span><span>Business development</span><span>Operations</span></div>
-          <a class="career-link" href="mailto:info@netly.ai?subject=Careers%20at%20Netly%20AI">Ask about current opportunities <span aria-hidden="true">↗</span></a>
+          <a class="career-link" href="/careers.html">See all eight openings <span aria-hidden="true">↗</span></a>
         </article>
       </div>
     </section>
@@ -181,7 +236,7 @@
     <div class="footer-inner section-wrap">
       <a class="brand footer-brand" href="/" aria-label="Netly AI home"><img src="/img/netly-small-logo.png" alt="Netly AI" width="108" height="50"></a>
       <p>AI-first workflows. More room for human potential.</p>
-      <nav aria-label="Footer navigation"><a href="#about">About</a><a href="#careers">Careers</a><a href="mailto:info@netly.ai">Contact</a></nav>
+      <nav aria-label="Footer navigation"><a href="#about">About</a><a href="/careers.html">Careers</a><a href="mailto:info@netly.ai">Contact</a></nav>
       <span class="copyright">© <span id="year">2026</span> Netly AI</span>
     </div>
   </footer>

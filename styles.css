@@ -46,17 +46,25 @@ h1 em, h2 em { color: #b9734e; font-family: var(--serif); font-weight: 400; lett
 .note-mark { display: grid; width: 25px; height: 25px; border-radius: 50%; place-items: center; background: #e8bd62; color: #4d4936; font: 700 11px var(--serif); }
 .hero-art { width: min(100%, 580px); justify-self: end; position: relative; animation: fade-in 1.2s both; }
 .hero-art svg { display: block; width: 100%; overflow: visible; }
-.orbit { fill: none; stroke: #d7dfd2; stroke-width: 1; stroke-dasharray: 3 8; }
-.orbit-one { transform-origin: 300px 265px; animation: rotate 75s linear infinite; }
-.orbit-two { stroke: #d5dfd0; stroke-dasharray: 2 7; }
-.thread { fill: none; stroke: url(#thread); stroke-width: 1.5; stroke-dasharray: 5 6; opacity: .75; }
-.spark { fill: #e9bd62; opacity: .14; transform-origin: 300px 265px; animation: breathe 5s ease-in-out infinite; }
-.person { transform-box: fill-box; transform-origin: center; animation: float 5s ease-in-out infinite; }
-.person-b { animation-delay: -1.2s; }.person-c { animation-delay: -2.4s; }.person-d { animation-delay: -3.6s; }
-.idea circle { fill: #d98568; animation: twinkle 3s ease-in-out infinite alternate; }
-.idea circle:nth-child(2) { animation-delay: -.8s; }.idea circle:nth-child(3) { animation-delay: -1.7s; }.idea circle:nth-child(4) { animation-delay: -.3s; }
-.art-card { animation: float-card 6s ease-in-out infinite; }
-.art-label { fill: #52685c; font: 700 9px var(--sans); letter-spacing: 1.3px; }
+.workflow-halo { transform-origin: 316px 249px; animation: halo-turn 90s linear infinite; }
+.workflow-orbit { fill: none; stroke: #cad7c9; stroke-width: 1.2; stroke-dasharray: 2 8; opacity: .72; animation: orbit-drift 22s linear infinite; }
+.workflow-kicker { fill: #536a59; font: 750 9px var(--sans); letter-spacing: 1.45px; }
+.workflow-live { fill: #728576; font: 700 7px var(--sans); letter-spacing: 1px; }
+.live-dot { fill: #78a17b; animation: live-pulse 2.4s ease-in-out infinite; }
+.rail-track { fill: none; stroke: #e4e9df; stroke-width: 2; stroke-linecap: round; }
+.workflow-rail { fill: none; stroke: url(#workflow-line); stroke-width: 2; stroke-dasharray: 5 7; stroke-linecap: round; animation: rail-flow 2.8s linear infinite; }
+.rail-node { fill: #fffefa; stroke: #b9cbb7; stroke-width: 2; transform-box: fill-box; transform-origin: center; animation: node-pulse 6s ease-in-out infinite; }
+.node-two { animation-delay: 2s; }.node-three { animation-delay: 4s; }
+.workflow-particle { fill: #d99839; animation: particle-pulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.step-surface { fill: #fcfbf7; stroke: #e8ece5; stroke-width: 1; animation: step-surface 6s ease-in-out infinite; }
+.workflow-step-two .step-surface { animation-delay: 2s; }
+.workflow-step-three .step-surface { animation-delay: 4s; }
+.step-eyebrow { fill: #869287; font: 700 7px var(--sans); letter-spacing: 1.2px; }
+.step-title { fill: #294b3e; font: 600 12px var(--sans); }
+.workflow-foot { fill: #677a69; font: 700 7px var(--sans); letter-spacing: 1px; }
+.human-chip { transform-box: fill-box; transform-origin: center; animation: chip-float 6.5s ease-in-out infinite; }
+.chip-title { fill: #2d5142; font: 650 10px var(--sans); }
+.chip-copy { fill: #7d897f; font: 9px var(--sans); }
 .art-caption { position: absolute; right: 0; bottom: 35px; display: flex; align-items: center; gap: 12px; padding: 14px 17px; background: rgb(255 254 250 / 88%); border: 1px solid #e6e8df; border-radius: 12px; box-shadow: 0 14px 40px rgb(31 58 45 / 7%); font: 14px/1.35 var(--serif); color: #45574b; }
 .caption-icon { width: 28px; height: 28px; display: grid; place-items: center; background: #f3e5c3; border-radius: 50%; color: #b57343; font: 16px var(--sans); }
 .hero-scroll { position: absolute; left: 0; bottom: 30px; display: flex; align-items: center; gap: 10px; font-size: 10px; letter-spacing: .08em; color: #869087; }
@@ -73,13 +81,19 @@ h1 em, h2 em { color: #b9734e; font-family: var(--serif); font-weight: 400; lett
 .pillar-number span { color: #9ba49a; font: 700 9px var(--sans); letter-spacing: .13em; margin-left: 7px; }
 .pillar h3 { font-size: 21px; font-weight: 580; letter-spacing: -.035em; margin: 43px 0 12px; }
 .pillar p { position: relative; z-index: 1; max-width: 290px; margin: 0; color: #69756d; font-size: 13px; line-height: 1.7; }
-.pillar-symbol { position: absolute; right: 22px; bottom: 20px; opacity: .42; }
-.symbol-people { width: 72px; height: 42px; }
-.symbol-people span { position: absolute; bottom: 0; width: 23px; height: 28px; border: 1.5px solid #9eb3a1; border-radius: 14px 14px 8px 8px; }
-.symbol-people span:before { content: ""; position: absolute; top: -13px; left: 5px; width: 10px; height: 10px; border: 1.5px solid #9eb3a1; border-radius: 50%; background: var(--white); }
-.symbol-people span:nth-child(2) { left: 24px; bottom: 4px; border-color: #d5ac59; }.symbol-people span:nth-child(2):before { border-color: #d5ac59; }.symbol-people span:nth-child(3) { left: 48px; }
-.symbol-sun { right: 30px; bottom: 17px; width: 54px; height: 54px; display: grid; place-items: center; border: 1px solid #dfc178; border-radius: 50%; color: #d0a84d; font-size: 25px; }
-.symbol-orbit { width: 72px; height: 49px; border: 1px solid #a9bcaa; border-radius: 50%; transform: rotate(-32deg); }.symbol-orbit:before,.symbol-orbit:after { content: ""; position: absolute; inset: 8px -4px; border: 1px solid #a9bcaa; border-radius: 50%; transform: rotate(57deg); }.symbol-orbit:after { inset: 19px 31px; background: #d9b765; border: 0; }
+.pillar-symbol { position: absolute; right: 18px; bottom: 12px; opacity: .74; }
+.pillar-art { display: block; width: 118px; height: 88px; overflow: visible; }
+.human-orbit { fill: none; stroke: #a9bba8; stroke-width: 1.3; stroke-dasharray: 3 5; transform-origin: 60px 46px; animation: halo-turn 18s linear infinite; }
+.human-halo { fill: #eaf0e5; transform-origin: 60px 42px; animation: soft-bloom 4s ease-in-out infinite; }
+.orbit-node { transform-box: fill-box; transform-origin: center; animation: node-pulse 3s ease-in-out infinite; }
+.node-right { animation-delay: 1.5s; }
+.mini-network { fill: none; stroke: #a5b9a4; stroke-width: 1.5; stroke-dasharray: 4 5; animation: rail-flow 5s linear infinite; }
+.mini-node { fill: #dce8d9; stroke: #91a98e; stroke-width: 1.2; transform-box: fill-box; transform-origin: center; animation: node-pulse 3.6s ease-in-out infinite; }
+.node-b { animation-delay: .9s; }.node-c { animation-delay: 1.8s; }.node-d { animation-delay: 2.7s; }
+.mini-center { fill: #d9b15a; }
+.insight-bar { transform-box: fill-box; transform-origin: center bottom; animation: bar-lift 3.3s ease-in-out infinite; }
+.bar-two { animation-delay: .35s; }.bar-three { animation-delay: .7s; }
+.insight-line { stroke-dasharray: 90; stroke-dashoffset: 90; animation: draw-insight 3.5s ease-in-out infinite; }
 .approach { display: grid; grid-template-columns: .8fr 1fr; gap: clamp(50px, 9vw, 135px); align-items: start; padding-top: 86px; padding-bottom: 112px; border-top: 1px solid var(--line); }
 .approach-head > p:last-child { max-width: 355px; color: #68746c; font-size: 14px; line-height: 1.75; margin-top: 20px; }
 .steps { border-top: 1px solid #dce3d9; }
@@ -122,11 +136,17 @@ h1 em, h2 em { color: #b9734e; font-family: var(--serif); font-weight: 400; lett
 .copyright { color: #8c968d; font-size: 10px; }
 @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
-@keyframes rotate { to { transform: rotate(360deg); } }
-@keyframes breathe { 0%,100% { transform: scale(.94); opacity: .12; } 50% { transform: scale(1.08); opacity: .22; } }
-@keyframes float { 0%,100% { translate: 0 0; } 50% { translate: 0 -6px; } }
-@keyframes float-card { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-@keyframes twinkle { from { opacity: .35; transform: scale(.8); } to { opacity: 1; transform: scale(1.15); } }
+@keyframes halo-turn { to { transform: rotate(360deg); } }
+@keyframes orbit-drift { to { stroke-dashoffset: -40; } }
+@keyframes rail-flow { to { stroke-dashoffset: -24; } }
+@keyframes live-pulse { 0%,100% { opacity: .65; } 50% { opacity: 1; filter: drop-shadow(0 0 4px #80a981); } }
+@keyframes node-pulse { 0%,15%,100% { transform: scale(1); } 7% { transform: scale(1.28); } }
+@keyframes particle-pulse { 0%,100% { opacity: .2; transform: scale(.75); } 50% { opacity: .85; transform: scale(1.3); } }
+@keyframes step-surface { 0%,12%,34%,100% { fill: #fcfbf7; stroke: #e8ece5; } 18%,28% { fill: #f8f4e9; stroke: #dfc782; } }
+@keyframes chip-float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@keyframes soft-bloom { 0%,100% { opacity: .45; transform: scale(.96); } 50% { opacity: .9; transform: scale(1.05); } }
+@keyframes bar-lift { 0%,12%,100% { transform: scaleY(.82); } 45%,72% { transform: scaleY(1); } }
+@keyframes draw-insight { 0%,18% { stroke-dashoffset: 90; } 68%,100% { stroke-dashoffset: 0; } }
 @media (max-width: 900px) {
   .hero { min-height: 600px; grid-template-columns: 1fr .9fr; gap: 0; }
   .hero-art { width: 112%; margin-left: -10%; }
@@ -149,7 +169,7 @@ h1 em, h2 em { color: #b9734e; font-family: var(--serif); font-weight: 400; lett
   .hero-lede { font-size: 15px; max-width: 420px; margin-top: 20px; }
   .hero-note { margin-top: 30px; }
   .hero-art { width: min(112%, 490px); align-self: center; margin: 13px -6% -4px; }
-  .art-caption { right: 2px; bottom: 28px; padding: 10px 12px; font-size: 12px; }
+
   .hero-scroll { bottom: 24px; }
   .intro { grid-template-columns: 1fr; gap: 22px; padding-top: 72px; padding-bottom: 58px; }
   .section-heading h2, .approach h2, .careers h2 { font-size: 39px; }
@@ -184,5 +204,8 @@ h1 em, h2 em { color: #b9734e; font-family: var(--serif); font-weight: 400; lett
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .workflow-rail { stroke-dasharray: none; }
+  .workflow-particle { opacity: .55; }
+  .insight-line { stroke-dashoffset: 0; }
 }
