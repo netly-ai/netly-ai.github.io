@@ -90,17 +90,17 @@ h1 em, h2 em { color: #b9734e; font-family: var(--serif); font-weight: 400; lett
 .step-arrow { color: #a9b7a8; transition: transform .2s ease; }.step:hover .step-arrow { transform: translate(3px,3px); color: #b5764c; }
 .careers { background: #193f38; color: #f8f7ef; position: relative; overflow: hidden; }
 .careers:before { content: ""; position: absolute; width: 550px; height: 550px; right: -180px; top: -260px; border-radius: 50%; border: 1px solid rgb(218 227 207 / 13%); box-shadow: 0 0 0 40px rgb(218 227 207 / 3%), 0 0 0 95px rgb(218 227 207 / 3%); }
-.careers-inner { position: relative; display: grid; grid-template-columns: .78fr 1.22fr; gap: 70px; align-items: center; padding-top: 104px; padding-bottom: 91px; }
+.careers-inner { position: relative; display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: center; padding-top: 104px; padding-bottom: 91px; }
 .careers .eyebrow { color: #d5bd7b; }
 .careers h2 em { color: #e9c270; }
 .careers-intro > p:not(.eyebrow) { max-width: 380px; color: #c0cdc2; font-size: 14px; line-height: 1.75; margin: 21px 0 28px; }
 .button-light { color: var(--green-dark); background: #f2dfaa; min-height: 46px; padding: 12px 17px; }
 .button-light:hover { background: #f8e9bd; }
-.career-projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
-.career-card { min-height: 314px; background: #f9f9f3; color: var(--ink); padding: 23px 22px 20px; border-radius: 9px; display: flex; flex-direction: column; }
+.careers-inner > .career-card { width: 100%; max-width: 510px; justify-self: end; }
+.career-card { min-height: 260px; background: #f9f9f3; color: var(--ink); padding: 23px 22px 20px; border-radius: 9px; display: flex; flex-direction: column; }
 .career-topline { display: flex; align-items: center; gap: 10px; }
 .career-mark { width: 28px; height: 28px; display: grid; place-items: center; border-radius: 8px; font: 700 12px var(--serif); }
-.mark-registry { background: #e6eddf; color: #315f48; }.mark-logbook { background: #f2e7cd; color: #946642; }
+.mark-netly { background: #e6eddf; color: #315f48; }
 .career-label { font-size: 8px; letter-spacing: .13em; font-weight: 750; color: #7a887b; }
 .career-card h3 { margin: 19px 0 9px; font-size: 18px; letter-spacing: -.03em; }
 .career-card p { font-size: 11px; line-height: 1.65; color: #69746c; margin: 0; }
@@ -108,7 +108,7 @@ h1 em, h2 em { color: #b9734e; font-family: var(--serif); font-weight: 400; lett
 .role-tags span { border: 1px solid #e4e8df; border-radius: 99px; padding: 5px 8px; color: #66746a; font-size: 9px; }
 .career-link { display: inline-flex; justify-content: space-between; align-items: center; gap: 12px; border-top: 1px solid #e3e7df; padding-top: 13px; margin-top: auto; color: #8a573b; text-decoration: none; font-size: 11px; font-weight: 700; }
 .career-link span { transition: transform .2s ease; }.career-link:hover span { transform: translate(3px,-3px); }
-.careers-footnote { grid-column: 2; margin: -48px 0 0; color: #b8c9bb; font-size: 10px; line-height: 1.5; }
+
 .closing { text-align: center; padding-top: 108px; padding-bottom: 115px; }
 .closing-mark { margin: 0 auto 25px; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: #edd48e; color: #7f5d3b; font: italic 26px var(--serif); }
 .closing .eyebrow { margin-bottom: 17px; }
@@ -132,7 +132,7 @@ h1 em, h2 em { color: #b9734e; font-family: var(--serif); font-weight: 400; lett
   .hero-art { width: 112%; margin-left: -10%; }
   .careers-inner { grid-template-columns: 1fr; gap: 40px; }
   .careers-intro { max-width: 540px; }
-  .careers-footnote { grid-column: 1; margin: -25px 0 0; }
+
 }
 @media (max-width: 680px) {
   html { scroll-padding-top: 70px; }
@@ -161,9 +161,9 @@ h1 em, h2 em { color: #b9734e; font-family: var(--serif); font-weight: 400; lett
   .step { min-height: 88px; grid-template-columns: 30px 1fr 18px; gap: 10px; }
   .step p { max-width: 270px; line-height: 1.5; }
   .careers-inner { padding-top: 75px; padding-bottom: 68px; gap: 31px; }
-  .career-projects { grid-template-columns: 1fr; }
+  .careers-inner > .career-card { justify-self: stretch; max-width: none; }
   .career-card { min-height: 280px; padding: 22px; }
-  .careers-footnote { margin-top: -13px; }
+
   .closing { padding-top: 78px; padding-bottom: 82px; }
   .closing h2 { font-size: 42px; }
   .footer-inner { min-height: 0; display: grid; grid-template-columns: 1fr auto; gap: 12px; padding-top: 24px; padding-bottom: 24px; }
