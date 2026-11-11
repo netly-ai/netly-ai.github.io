@@ -1,4 +1,4 @@
-/* English / Nepali language parity for the public Netly AI homepage and careers page. */
+/* English / Nepali language parity for the public Nētly AI homepage and careers page. */
 (() => {
   'use strict';
 
@@ -10,9 +10,12 @@
     'Get in touch': 'सम्पर्क गर्नुहोस्',
     'Main navigation': 'मुख्य नेभिगेसन',
     'Footer navigation': 'फुटर नेभिगेसन',
-    'Netly AI home': 'Netly AI गृहपृष्ठ',
-    'Netly AI — More room for what matters': 'Netly AI — महत्त्वपूर्ण कामका लागि थप समय',
-    'Netly AI builds thoughtful technology that helps people and teams make more room for what matters.': 'Netly AI ले मानिस र टोलीलाई महत्त्वपूर्ण कामका लागि समय र ध्यान दिन सहयोग गर्ने विचारशील प्रविधि निर्माण गर्छ।',
+    'Nētly AI home': 'Nētly AI गृहपृष्ठ',
+    'Investor briefing': 'लगानीकर्ता जानकारी',
+    'Investor access': 'लगानीकर्ता पहुँच',
+    'Neatly yours, Nētly AI': 'नितान्त आफ्नै, Nētly AI',
+    'Nētly AI — More room for what matters': 'Nētly AI — महत्त्वपूर्ण कामका लागि थप समय',
+    'Nētly AI builds thoughtful technology that helps people and teams make more room for what matters.': 'Nētly AI ले मानिस र टोलीलाई महत्त्वपूर्ण कामका लागि समय र ध्यान दिन सहयोग गर्ने विचारशील प्रविधि निर्माण गर्छ।',
     'Human-centered technology, built with care.': 'मानिसलाई केन्द्रमा राखेर, जिम्मेवारीपूर्वक बनाइएको प्रविधि।',
     'AI-FIRST WORKFLOW AUTOMATION': 'एआई-आधारित कार्यप्रवाह स्वचालन',
     'Multiply what people can': 'मानिसको क्षमता अझ',
@@ -73,20 +76,19 @@
     'AI / ML': 'एआई / मेसिन लर्निङ',
     'Career areas': 'करियरका क्षेत्रहरू',
     'See all eight openings': 'सबै आठ पद हेर्नुहोस्',
-    'NEATLY YOURS, NETLY': 'सहज प्रविधि, Netly',
     'Let’s make something': 'सँगै केही यस्तो बनाऔँ',
     'that makes life': 'जसले जीवनलाई',
     'better.': 'अझ सहज बनाओस्।',
     'Say hello': 'सम्पर्क गर्नुहोस्',
     'AI-first workflows. More room for human potential.': 'एआई-आधारित कार्यप्रवाह। मानवीय क्षमताका लागि थप अवसर।',
     'Contact': 'सम्पर्क',
-    'Netly AI': 'Netly AI',
+    'Nētly AI': 'Nētly AI',
     'Animated illustration of a business request moving through coordinated AI agents and becoming an operational insight, with a person guiding the outcome': 'एउटा व्यावसायिक अनुरोध एजेन्टमार्फत अघि बढेर उपयोगी सञ्चालन जानकारीमा रूपान्तरण भएको दृश्य; मानिसले नतिजाको दिशा तय गर्छ।',
     'What guides our work': 'हाम्रो कामलाई दिशा दिने कुरा',
 
-    'Careers at Netly AI': 'Netly AI मा करियर',
-    'Explore current opportunities at Netly AI across AI, software engineering, research, security, design, and business development.': 'Netly AI मा एआई, सफ्टवेयर इन्जिनियरिङ, अनुसन्धान, सुरक्षा, डिजाइन र व्यवसाय विकासका अवसरहरू हेर्नुहोस्।',
-    'Bring your curiosity. Make work matter. Explore eight opportunities at Netly AI.': 'आफ्नो जिज्ञासा ल्याउनुहोस्। अर्थपूर्ण काम गर्नुहोस्। Netly AI का आठ अवसर हेर्नुहोस्।',
+    'Careers at Nētly AI': 'Nētly AI मा करियर',
+    'Explore current opportunities at Nētly AI across AI, software engineering, research, security, design, and business development.': 'Nētly AI मा एआई, सफ्टवेयर इन्जिनियरिङ, अनुसन्धान, सुरक्षा, डिजाइन र व्यवसाय विकासका अवसरहरू हेर्नुहोस्।',
+    'Bring your curiosity. Make work matter. Explore eight opportunities at Nētly AI.': 'आफ्नो जिज्ञासा ल्याउनुहोस्। अर्थपूर्ण काम गर्नुहोस्। Nētly AI का आठ अवसर हेर्नुहोस्।',
     'CAREERS AT NETLY AI': 'NETLY AI मा करियर',
     'Bring your curiosity.': 'आफ्नो जिज्ञासा ल्याउनुहोस्।',
     'Make work': 'कामलाई',
@@ -184,23 +186,23 @@
     'Help shape what comes': 'आगामी कामलाई आकार',
     'next.': 'दिन सहयोग गर्नुहोस्।',
     'Introduce yourself': 'आफ्नो परिचय दिनुहोस्',
-    '← Back to Netly AI': '← Netly AI मा फर्कनुहोस्',
-    '© 2026 Netly AI': '© २०२६ Netly AI',
+    '← Back to Nētly AI': '← Nētly AI मा फर्कनुहोस्',
+    '© 2026 Nētly AI · Netly A.I. Private Limited': '© २०२६ Nētly AI · Netly A.I. Private Limited',
   };
 
   const reverse = Object.fromEntries(Object.entries(np).map(([en, ne]) => [ne, en]));
   const metadata = {
     '/': {
-      title: 'Netly AI — मानिसका लागि अझ महत्त्वपूर्ण समय',
-      description: 'Netly AI ले मानिस र टोलीलाई महत्त्वपूर्ण कामका लागि समय र ध्यान दिन सहयोग गर्ने विचारशील प्रविधि निर्माण गर्छ।',
-      ogTitle: 'Netly AI — महत्त्वपूर्ण कामका लागि थप समय',
+      title: 'Nētly AI — मानिसका लागि अझ महत्त्वपूर्ण समय',
+      description: 'Nētly AI ले मानिस र टोलीलाई महत्त्वपूर्ण कामका लागि समय र ध्यान दिन सहयोग गर्ने विचारशील प्रविधि निर्माण गर्छ।',
+      ogTitle: 'Nētly AI — महत्त्वपूर्ण कामका लागि थप समय',
       ogDescription: 'मानिसकेन्द्रित प्रविधि, जिम्मेवारीपूर्वक निर्माण गरिएको।',
     },
     '/careers': {
-      title: 'Netly AI मा करियर',
-      description: 'Netly AI मा एआई, सफ्टवेयर इन्जिनियरिङ, अनुसन्धान, सुरक्षा, डिजाइन र व्यवसाय विकासका अवसरहरू हेर्नुहोस्।',
-      ogTitle: 'Netly AI मा करियर',
-      ogDescription: 'आफ्नो जिज्ञासा ल्याउनुहोस्। अर्थपूर्ण काम गर्नुहोस्। Netly AI का आठ अवसर हेर्नुहोस्।',
+      title: 'Nētly AI मा करियर',
+      description: 'Nētly AI मा एआई, सफ्टवेयर इन्जिनियरिङ, अनुसन्धान, सुरक्षा, डिजाइन र व्यवसाय विकासका अवसरहरू हेर्नुहोस्।',
+      ogTitle: 'Nētly AI मा करियर',
+      ogDescription: 'आफ्नो जिज्ञासा ल्याउनुहोस्। अर्थपूर्ण काम गर्नुहोस्। Nētly AI का आठ अवसर हेर्नुहोस्।',
     },
   };
 
@@ -209,8 +211,14 @@
   const readPreference = () => {
     const override = new URLSearchParams(location.search).get('lang');
     if (override === 'np' || override === 'en') return override;
-    try { return localStorage.getItem('netly-language') === 'np' ? 'np' : 'en'; }
-    catch (_) { return 'en'; }
+    try {
+      const saved = localStorage.getItem('netly-language');
+      if (saved === 'np' || saved === 'en') return saved;
+    } catch (_) { /* Fall back to browser location signals. */ }
+    const locale = (navigator.language || '').toLowerCase();
+    let zone = '';
+    try { zone = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (_) { /* Ignore unsupported timezone APIs. */ }
+    return zone === 'Asia/Kathmandu' || locale === 'ne' || locale.startsWith('ne-') || locale === 'en-np' ? 'np' : 'en';
   };
 
   function translated(value, language) {
@@ -220,13 +228,13 @@
 
   function updateContent(language) {
     document.documentElement.lang = language === 'np' ? 'ne' : 'en';
-    document.title = language === 'np' ? pageMeta.title : (normalizePath === '/' ? 'Netly AI — More room for what matters' : 'Careers at Netly AI');
+    document.title = language === 'np' ? pageMeta.title : (normalizePath === '/' ? 'Nētly AI — More room for what matters' : 'Careers at Nētly AI');
     const description = document.querySelector('meta[name="description"]');
     const ogTitle = document.querySelector('meta[property="og:title"]');
     const ogDescription = document.querySelector('meta[property="og:description"]');
-    if (description) description.content = language === 'np' ? pageMeta.description : (normalizePath === '/' ? 'Netly AI builds thoughtful technology that helps people and teams make more room for what matters.' : 'Explore current opportunities at Netly AI across AI, software engineering, research, security, design, and business development.');
-    if (ogTitle) ogTitle.content = language === 'np' ? pageMeta.ogTitle : (normalizePath === '/' ? 'Netly AI — More room for what matters' : 'Careers at Netly AI');
-    if (ogDescription) ogDescription.content = language === 'np' ? pageMeta.ogDescription : (normalizePath === '/' ? 'Human-centered technology, built with care.' : 'Bring your curiosity. Make work matter. Explore eight opportunities at Netly AI.');
+    if (description) description.content = language === 'np' ? pageMeta.description : (normalizePath === '/' ? 'Nētly AI builds thoughtful technology that helps people and teams make more room for what matters.' : 'Explore current opportunities at Nētly AI across AI, software engineering, research, security, design, and business development.');
+    if (ogTitle) ogTitle.content = language === 'np' ? pageMeta.ogTitle : (normalizePath === '/' ? 'Nētly AI — More room for what matters' : 'Careers at Nētly AI');
+    if (ogDescription) ogDescription.content = language === 'np' ? pageMeta.ogDescription : (normalizePath === '/' ? 'Human-centered technology, built with care.' : 'Bring your curiosity. Make work matter. Explore eight opportunities at Nētly AI.');
 
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
     let node;

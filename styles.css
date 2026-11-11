@@ -26,6 +26,8 @@ a:focus-visible { outline: 3px solid #db9d30; outline-offset: 4px; border-radius
 .main-nav { display: flex; align-items: center; gap: clamp(20px, 3vw, 42px); }
 .main-nav a, .site-footer nav a { font-size: 13px; color: #45584f; text-decoration: none; transition: color .2s ease; }
 .main-nav a:hover, .site-footer nav a:hover { color: #bd7635; }
+.main-nav .nav-investor { border: 1px solid #cbd5c9; border-radius: 999px; padding: 12px 17px; color: var(--ink); }
+.main-nav .nav-investor:hover { border-color: #bd7635; }
 .main-nav .nav-contact { border: 1px solid #cbd5c9; border-radius: 999px; padding: 12px 17px; color: var(--ink); }
 .nav-contact span { margin-left: 8px; color: #bf774b; }
 .hero { min-height: 660px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 32px; padding-top: 44px; padding-bottom: 85px; position: relative; }
@@ -161,6 +163,7 @@ h1 em, h2 em { color: #b9734e; font-family: var(--serif); font-weight: 400; lett
   .brand img { width: 96px; }
   .main-nav { gap: 13px; }
   .main-nav a { font-size: 10px; }
+  .main-nav .nav-investor { padding: 8px 10px; }
   .main-nav .nav-contact { padding: 8px 10px; }
   .nav-contact span { margin-left: 3px; }
   .hero { display: flex; flex-direction: column; align-items: stretch; min-height: auto; padding-top: 67px; padding-bottom: 75px; }
@@ -196,6 +199,7 @@ h1 em, h2 em { color: #b9734e; font-family: var(--serif); font-weight: 400; lett
   .section-wrap { width: calc(100% - 32px); }
   .main-nav { gap: 9px; }
   .main-nav a { font-size: 9px; }
+  .main-nav .nav-investor { padding: 8px 6px; }
   .main-nav .nav-contact { padding: 8px; }
   .hero h1 { font-size: 46px; }
   .hero-actions { gap: 3px; }
@@ -209,3 +213,8 @@ h1 em, h2 em { color: #b9734e; font-family: var(--serif); font-weight: 400; lett
   .workflow-particle { opacity: .55; }
   .insight-line { stroke-dashoffset: 0; }
 }
+
+/* Nētly AI text wordmark */
+.brand-wordmark { color: #245b4e; font: 700 29px/1 Georgia, serif; letter-spacing: -.045em; white-space: nowrap; }
+.brand-wordmark b { margin-left: 4px; color: #c5785e; font: 800 12px/1 ui-sans-serif, system-ui, sans-serif; letter-spacing: .12em; vertical-align: 5px; }
+.footer-brand .brand-wordmark { font-size: 24px; }
