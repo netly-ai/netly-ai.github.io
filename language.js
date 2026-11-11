@@ -207,6 +207,8 @@
   const normalizePath = location.pathname.replace(/\/$/, '') || '/';
   const pageMeta = metadata[normalizePath] || metadata['/careers'];
   const readPreference = () => {
+    const override = new URLSearchParams(location.search).get('lang');
+    if (override === 'np' || override === 'en') return override;
     try { return localStorage.getItem('netly-language') === 'np' ? 'np' : 'en'; }
     catch (_) { return 'en'; }
   };
