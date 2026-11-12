@@ -60,12 +60,30 @@
     'Connect agents, tools, and information around the intended outcome.': 'अपेक्षित नतिजाअनुसार एजेन्ट, उपकरण र जानकारी जोड्नुहोस्।',
     'Keep people in control': 'मानिसको नियन्त्रण कायम राख्नुहोस्',
     'Make actions visible, useful, and guided by human judgment.': 'काम पारदर्शी र उपयोगी बनाउनुहोस्, र मानवीय विवेकलाई मार्गदर्शक राख्नुहोस्।',
+    'WORKFLOWS IN PRACTICE': 'व्यवहारमा कार्यप्रवाह',
+    'See how the approach': 'यो कार्यशैली कसरी',
+    'takes shape.': 'कार्यान्वयन हुन्छ हेर्नुहोस्।',
+    'These interactive demonstrations show source capture, review, and handoff in bounded workflows. They use synthetic data and do not represent production deployments.': 'यी अन्तरक्रियात्मक प्रदर्शनले सीमित कार्यप्रवाहमा स्रोत अभिलेख, समीक्षा र हस्तान्तरण देखाउँछन्। यसमा कृत्रिम विवरण प्रयोग गरिएको छ; यी उत्पादनमा सञ्चालन भएका प्रणाली होइनन्।',
+    'SYNTHETIC DEMONSTRATION': 'कृत्रिम विवरणको प्रदर्शन',
+    'Logbook': 'Logbook',
+    'For operations teams': 'सञ्चालन टोलीका लागि',
+    'Follow a work event from its source through review and into a shift handoff.': 'कामको अभिलेखलाई स्रोतदेखि समीक्षासम्म र पाली हस्तान्तरणसम्म पछ्याउनुहोस्।',
+    'Open the Logbook demonstration': 'Logbook प्रदर्शन खोल्नुहोस्',
+    'Registry': 'Registry',
+    'For clinical documentation teams': 'चिकित्सकीय अभिलेख टोलीका लागि',
+    'Review source-linked facts in a simulated diabetes care workflow. No real patient data is used.': 'मधुमेह हेरचाहको कृत्रिम कार्यप्रवाहमा स्रोतसँग जोडिएका विवरण समीक्षा गर्नुहोस्। वास्तविक बिरामीको विवरण प्रयोग गरिएको छैन।',
+    'Open the Registry demonstration': 'Registry प्रदर्शन खोल्नुहोस्',
+    'To explore a pilot, contact': 'पाइलटबारे छलफल गर्न सम्पर्क गर्नुहोस्',
+    'Please do not send patient, employee, or other sensitive records through this public website. An email link is not a submitted or qualified lead.': 'यस सार्वजनिक वेबसाइटबाट बिरामी, कर्मचारी वा अन्य संवेदनशील अभिलेख नपठाउनुहोस्। इमेल लिङ्क खोल्नुले अनुरोध पेश भएको वा सम्भावित ग्राहक पुष्टि भएको जनाउँदैन।',
+    'AI-first workflows. More room for human potential.': 'एआई-आधारित कार्यप्रवाह। मानवीय क्षमताका लागि थप समय।',
+    'Discuss a workflow pilot': 'कार्यप्रवाह पाइलटबारे छलफल गर्नुहोस्',
+    'View the Logbook demonstration': 'Logbook प्रदर्शन हेर्नुहोस्',
     'CAREERS AT NETLY': 'NETLY मा करियर',
     'Build AI that gives people more room to': 'मानिसलाई आफ्नो उत्कृष्ट काम गर्न सहयोग गर्ने एआई',
     'do their best work.': 'निर्माण गर्न आउनुहोस्।',
     'Join a curious, multidisciplinary team shaping useful agentic workflows and thoughtful human-AI collaboration.': 'उपयोगी एजेन्टिक कार्यप्रवाह र विचारशील मानव–एआई सहकार्य निर्माण गर्ने जिज्ञासु, बहुविषयक टोलीमा जोडिनुहोस्।',
     'Explore opportunities': 'अवसरहरू हेर्नुहोस्',
-    'OPEN AREAS': 'खुला क्षेत्रहरू',
+    'AREAS OF INTEREST · FUNDING-DEPENDENT': 'रुचिका क्षेत्र · कोषमा निर्भर',
     'Bring what you do best.': 'आफ्नो उत्कृष्ट क्षमता ल्याउनुहोस्।',
     'We welcome people who want to make AI useful, reliable, and more human-centered.': 'एआईलाई उपयोगी, भरपर्दो र मानिसकेन्द्रित बनाउन चाहने सबैलाई स्वागत छ।',
     'Software engineering': 'सफ्टवेयर इन्जिनियरिङ',
@@ -75,32 +93,33 @@
     'Operations': 'सञ्चालन',
     'AI / ML': 'एआई / मेसिन लर्निङ',
     'Career areas': 'करियरका क्षेत्रहरू',
-    'See all eight openings': 'सबै आठ पद हेर्नुहोस्',
+    'Explore role profiles': 'भूमिका विवरण हेर्नुहोस्',
+    'Expressions of interest': 'रुचि अभिव्यक्ति',
+    'Funding-dependent · scope confirmed before start': 'कोषमा निर्भर · सुरु गर्नुअघि कार्यक्षेत्र निश्चित',
+    'ROLE PROFILES': 'भूमिका विवरण',
+    'Explore the capabilities we expect to need.': 'हामीलाई आवश्यक पर्न सक्ने क्षमताबारे हेर्नुहोस्।',
+    'These role profiles describe company-wide capabilities. Engagements depend on approved scope and funding; a specific owner, schedule, and terms will be confirmed before work begins. An application email starts a conversation and does not confirm an active funded position.': 'यी भूमिका विवरणले कम्पनीलाई आवश्यक पर्न सक्ने क्षमताहरू बताउँछन्। कामको दायरा र कोष स्वीकृत भएपछि मात्र संलग्नता अघि बढ्छ; काम सुरु हुनुअघि जिम्मेवार व्यक्ति, समयतालिका र सर्तहरू पुष्टि गरिनेछन्। आवेदन इमेलले छलफल सुरु गर्छ, तर पदका लागि कोष स्वीकृत भएको पुष्टि गर्दैन।',
+    'FUNDING-DEPENDENT': 'कोषमा निर्भर',
     'Let’s make something': 'सँगै केही यस्तो बनाऔँ',
     'that makes life': 'जसले जीवनलाई',
     'better.': 'अझ सहज बनाओस्।',
     'Say hello': 'सम्पर्क गर्नुहोस्',
-    'AI-first workflows. More room for human potential.': 'एआई-आधारित कार्यप्रवाह। मानवीय क्षमताका लागि थप अवसर।',
+    'AI-first workflows. More room for human potential.': 'एआई-आधारित कार्यप्रवाह। मानवीय क्षमताका लागि थप समय।',
     'Contact': 'सम्पर्क',
     'Nētly AI': 'Nētly AI',
     'Animated illustration of a business request moving through coordinated AI agents and becoming an operational insight, with a person guiding the outcome': 'एउटा व्यावसायिक अनुरोध एजेन्टमार्फत अघि बढेर उपयोगी सञ्चालन जानकारीमा रूपान्तरण भएको दृश्य; मानिसले नतिजाको दिशा तय गर्छ।',
     'What guides our work': 'हाम्रो कामलाई दिशा दिने कुरा',
 
     'Careers at Nētly AI': 'Nētly AI मा करियर',
-    'Explore current opportunities at Nētly AI across AI, software engineering, research, security, design, and business development.': 'Nētly AI मा एआई, सफ्टवेयर इन्जिनियरिङ, अनुसन्धान, सुरक्षा, डिजाइन र व्यवसाय विकासका अवसरहरू हेर्नुहोस्।',
-    'Bring your curiosity. Make work matter. Explore eight opportunities at Nētly AI.': 'आफ्नो जिज्ञासा ल्याउनुहोस्। अर्थपूर्ण काम गर्नुहोस्। Nētly AI का आठ अवसर हेर्नुहोस्।',
     'CAREERS AT NETLY AI': 'NETLY AI मा करियर',
     'Bring your curiosity.': 'आफ्नो जिज्ञासा ल्याउनुहोस्।',
     'Make work': 'कामलाई',
     'matter.': 'अर्थपूर्ण बनाउनुहोस्।',
     'Join a thoughtful, multidisciplinary team building AI-first workflows that give people more room to do their best work.': 'मानिसलाई आफ्नो उत्कृष्ट काम गर्न अवसर दिने एआई-आधारित कार्यप्रवाह निर्माण गर्ने विचारशील, बहुविषयक टोलीमा जोडिनुहोस्।',
-    'Open opportunities': 'खुला अवसरहरू',
-    'Core · Specialist · Internship': 'मुख्य भूमिका · विशेषज्ञ · इन्टर्नसिप',
     'PEOPLE + POSSIBILITY': 'मानिस + सम्भावना',
-    'CURRENT OPPORTUNITIES': 'हालका अवसरहरू',
     'Find your kind of': 'आफूलाई सुहाउने',
     'work.': 'काम खोज्नुहोस्।',
-    'We value clear thinking, careful craft, and people who want their work to make a practical difference. Choose a role to learn more.': 'हामी स्पष्ट सोच, सावधानीपूर्वक काम र व्यावहारिक प्रभाव सिर्जना गर्न चाहने मानिसको कदर गर्छौँ। थप जानकारीका लागि भूमिका छान्नुहोस्।',
+    'We value clear thinking, careful craft, and people who want their work to make a practical difference. Explore the capabilities we expect to need.': 'हामी स्पष्ट सोच, सावधानीपूर्वक काम र व्यावहारिक प्रभाव सिर्जना गर्न चाहने मानिसको कदर गर्छौँ। हामीलाई आवश्यक पर्न सक्ने क्षमताबारे हेर्नुहोस्।',
     'CORE ROLE': 'मुख्य भूमिका',
     'Full-stack Software Engineer': 'फुल-स्ट्याक सफ्टवेयर इन्जिनियर',
     'Build dependable software, clear user experiences, and the services that connect them.': 'भरपर्दो सफ्टवेयर, स्पष्ट प्रयोगकर्ता अनुभव र तिनलाई जोड्ने सेवा निर्माण गर्नुहोस्।',
@@ -187,6 +206,7 @@
     'next.': 'दिन सहयोग गर्नुहोस्।',
     'Introduce yourself': 'आफ्नो परिचय दिनुहोस्',
     '← Back to Nētly AI': '← Nētly AI मा फर्कनुहोस्',
+    'Continue to role profiles': 'भूमिका विवरणमा जानुहोस्',
     '© 2026 Nētly AI · Netly A.I. Private Limited': '© २०२६ Nētly AI · Netly A.I. Private Limited',
   };
 
@@ -194,15 +214,15 @@
   const metadata = {
     '/': {
       title: 'Nētly AI — मानिसका लागि अझ महत्त्वपूर्ण समय',
-      description: 'Nētly AI ले मानिस र टोलीलाई महत्त्वपूर्ण कामका लागि समय र ध्यान दिन सहयोग गर्ने विचारशील प्रविधि निर्माण गर्छ।',
+      description: 'Nētly AI ले टोलीलाई दोहोरिने काम घटाउन र राम्रो जानकारीमा आधारित निर्णय गर्न सहयोग गर्ने, मानिसको निर्देशनमा चल्ने एआई कार्यप्रवाह बनाउँछ।',
       ogTitle: 'Nētly AI — महत्त्वपूर्ण कामका लागि थप समय',
-      ogDescription: 'मानिसकेन्द्रित प्रविधि, जिम्मेवारीपूर्वक निर्माण गरिएको।',
+      ogDescription: 'कार्यप्रवाहका प्रदर्शन हेर्नुहोस् र सीमित पाइलटबारे Nētly AI टोलीसँग छलफल गर्नुहोस्।',
     },
     '/careers': {
       title: 'Nētly AI मा करियर',
-      description: 'Nētly AI मा एआई, सफ्टवेयर इन्जिनियरिङ, अनुसन्धान, सुरक्षा, डिजाइन र व्यवसाय विकासका अवसरहरू हेर्नुहोस्।',
+      description: 'Nētly AI मा सफ्टवेयर, चिकित्सकीय अनुसन्धान, सुरक्षा, डिजाइन, एआई र व्यवसाय विकाससम्बन्धी कोषमा निर्भर भूमिका विवरण हेर्नुहोस्।',
       ogTitle: 'Nētly AI मा करियर',
-      ogDescription: 'आफ्नो जिज्ञासा ल्याउनुहोस्। अर्थपूर्ण काम गर्नुहोस्। Nētly AI का आठ अवसर हेर्नुहोस्।',
+      ogDescription: 'Nētly AI मा भूमिका विवरण र रुचि अभिव्यक्ति हेर्नुहोस्। संलग्नता स्वीकृत कार्यक्षेत्र र कोषमा निर्भर हुन्छ।',
     },
   };
 
@@ -232,9 +252,9 @@
     const description = document.querySelector('meta[name="description"]');
     const ogTitle = document.querySelector('meta[property="og:title"]');
     const ogDescription = document.querySelector('meta[property="og:description"]');
-    if (description) description.content = language === 'np' ? pageMeta.description : (normalizePath === '/' ? 'Nētly AI builds thoughtful technology that helps people and teams make more room for what matters.' : 'Explore current opportunities at Nētly AI across AI, software engineering, research, security, design, and business development.');
+    if (description) description.content = language === 'np' ? pageMeta.description : (normalizePath === '/' ? 'Nētly AI designs human-guided AI workflows that help teams reduce repetitive work and make better-informed decisions.' : 'Explore funding-dependent role profiles at Nētly AI across software, clinical research, security, design, AI, and business development.');
     if (ogTitle) ogTitle.content = language === 'np' ? pageMeta.ogTitle : (normalizePath === '/' ? 'Nētly AI — More room for what matters' : 'Careers at Nētly AI');
-    if (ogDescription) ogDescription.content = language === 'np' ? pageMeta.ogDescription : (normalizePath === '/' ? 'Human-centered technology, built with care.' : 'Bring your curiosity. Make work matter. Explore eight opportunities at Nētly AI.');
+    if (ogDescription) ogDescription.content = language === 'np' ? pageMeta.ogDescription : (normalizePath === '/' ? 'Explore workflow demonstrations and discuss a bounded pilot with the Nētly AI team.' : 'Explore role profiles and expressions of interest at Nētly AI. Engagements depend on approved scope and funding.');
 
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
     let node;

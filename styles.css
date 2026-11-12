@@ -104,6 +104,22 @@ h1 em, h2 em { color: #b9734e; font-family: var(--serif); font-weight: 400; lett
 .step h3 { margin: 0 0 5px; font-size: 15px; font-weight: 650; letter-spacing: -.02em; }
 .step p { margin: 0; font-size: 12px; color: #748077; }
 .step-arrow { color: #a9b7a8; transition: transform .2s ease; }.step:hover .step-arrow { transform: translate(3px,3px); color: #b5764c; }
+.products { padding-top: 40px; padding-bottom: 115px; border-top: 1px solid var(--line); }
+.products-heading { max-width: 680px; margin-bottom: 28px; }
+.products-heading h2 { font-size: clamp(34px, 4vw, 51px); letter-spacing: -.05em; line-height: 1.08; font-weight: 500; margin: 0; }
+.products-heading > p:last-child { max-width: 570px; color: #68746c; font-size: 14px; line-height: 1.75; margin: 18px 0 0; }
+.product-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.product-card { min-height: 270px; display: flex; flex-direction: column; align-items: flex-start; padding: 25px 28px; border: 1px solid #e3e9df; border-radius: 10px; background: #fffefa; }
+.product-card-top { display: flex; align-items: center; gap: 11px; width: 100%; }
+.product-icon { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 9px; background: #e8efe4; color: #315f48; font: 700 14px var(--serif); }
+.product-icon-registry { background: #f5e9d0; color: #9a6733; }
+.product-status { color: #68796a; font-size: 8px; font-weight: 750; letter-spacing: .12em; }
+.product-card h3 { margin: 27px 0 3px; font-size: 24px; letter-spacing: -.04em; font-weight: 600; }
+.product-card p { max-width: 470px; margin: 8px 0 0; color: #68746c; font-size: 13px; line-height: 1.65; }
+.product-card p.product-audience { margin-top: 0; color: #8c684a; font-size: 11px; font-weight: 650; }
+.product-card .inline-link { margin-top: auto; padding-top: 20px; }
+.pilot-note { max-width: 850px; margin: 25px 0 0; color: #748077; font-size: 11px; line-height: 1.7; }
+.pilot-note a { color: #925b3c; }
 .careers { background: #193f38; color: #f8f7ef; position: relative; overflow: hidden; }
 .careers:before { content: ""; position: absolute; width: 550px; height: 550px; right: -180px; top: -260px; border-radius: 50%; border: 1px solid rgb(218 227 207 / 13%); box-shadow: 0 0 0 40px rgb(218 227 207 / 3%), 0 0 0 95px rgb(218 227 207 / 3%); }
 .careers-inner { position: relative; display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: center; padding-top: 104px; padding-bottom: 91px; }
@@ -157,6 +173,9 @@ h1 em, h2 em { color: #b9734e; font-family: var(--serif); font-weight: 400; lett
 
 }
 @media (max-width: 680px) {
+  .products { padding-top: 30px; padding-bottom: 78px; }
+  .product-grid { grid-template-columns: 1fr; }
+  .product-card { min-height: 245px; padding: 21px; }
   html { scroll-padding-top: 70px; }
   .section-wrap { width: min(100% - 38px, 520px); }
   .header-inner { min-height: 70px; width: calc(100% - 32px); gap: 15px; }
