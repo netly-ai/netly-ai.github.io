@@ -104,7 +104,7 @@ def main():
                     if page == 'home':
                         assert browser.js('document.querySelectorAll(".product-card").length === 3')
                         assert browser.js('document.querySelectorAll(".product-status").length === 3')
-                        assert browser.js('Array.from(document.links).some(a => a.getAttribute("href") === "/raqueteer/")')
+                        assert browser.js('Array.from(document.links).some(a => a.getAttribute("href") === "https://raqueteer.netly.ai/")')
                         assert browser.js('Array.from(document.links).some(a => a.href.includes("mailto:info@netly.ai?subject=Workflow%20pilot"))')
                         assert browser.js('Array.from(document.links).some(a => a.href.startsWith("https://logbook.netly.ai/simulator/app.html"))')
                         assert browser.js('Array.from(document.links).some(a => a.href === "https://registry.netly.ai/")')
