@@ -95,15 +95,16 @@ def main():
                         'deviceScaleFactor': 1, 'mobile': viewport == 'mobile'})
                     browser.call('Page.navigate', {'url': f'{base}{path}?lang={language}'})
                     expected = 'ne' if language == 'np' else 'en'
-                    browser.wait(f'document.documentElement.lang === "{expected}" && !!document.querySelector(".language-switch")')
+                    browser.wait(f'document.documentElement?.lang === "{expected}" && !!document.querySelector(".language-switch")')
                     assert browser.js('document.querySelectorAll("h1").length === 1'), f'{page}/{language}: expected one page heading'
                     assert browser.js('!!document.querySelector(".skip-link") && !!document.querySelector("nav[aria-label]")'), f'{page}/{language}: missing accessible navigation'
                     assert not browser.js('document.documentElement.scrollWidth > innerWidth + 1'), f'{page}/{language}/{viewport}: horizontal overflow'
                     assert browser.js('Array.from(document.querySelectorAll(".nav-investor")).filter(a => a.href === "https://registry.netly.ai/briefing").length === 1'), f'{page}: investor route mismatch'
                     assert browser.js('Array.from(document.links).filter(a => a.getAttribute("href")?.startsWith("#")).every(a => document.getElementById(a.getAttribute("href").slice(1)))'), f'{page}: broken in-page link'
                     if page == 'home':
-                        assert browser.js('document.querySelectorAll(".product-card").length === 2')
-                        assert browser.js('document.querySelectorAll(".product-status").length === 2')
+                        assert browser.js('document.querySelectorAll(".product-card").length === 3')
+                        assert browser.js('document.querySelectorAll(".product-status").length === 3')
+                        assert browser.js('Array.from(document.links).some(a => a.getAttribute("href") === "/raqueteer/")')
                         assert browser.js('Array.from(document.links).some(a => a.href.includes("mailto:info@netly.ai?subject=Workflow%20pilot"))')
                         assert browser.js('Array.from(document.links).some(a => a.href.startsWith("https://logbook.netly.ai/simulator/app.html"))')
                         assert browser.js('Array.from(document.links).some(a => a.href === "https://registry.netly.ai/")')
@@ -114,7 +115,7 @@ def main():
                             assert browser.js('document.querySelector("#products-title").innerText.includes("See how the approach")')
                     else:
                         assert browser.js('document.querySelectorAll(".opening-card").length === 8')
-                        assert browser.js('[...document.querySelectorAll(".opening-state")].every(x => x.textContent === (document.documentElement.lang === "ne" ? "कोषमा निर्भर" : "FUNDING-DEPENDENT"))')
+                        assert browser.js('[...document.querySelectorAll(".opening-state")].every(x => x.textContent === (document.documentElement?.lang === "ne" ? "कोषमा निर्भर" : "FUNDING-DEPENDENT"))')
                         assert browser.js('!!document.querySelector(".role-status-note")')
                         if language == 'np':
                             assert browser.js('document.querySelector("#openings-title").innerText.includes("आफूलाई सुहाउने")')
@@ -125,7 +126,7 @@ def main():
 
         browser.call('Page.navigate', {'url': f'{base}/careers/?lang=np#openings-title'})
         browser.wait('location.pathname === "/careers.html" && location.search === "?lang=np" && location.hash === "#openings-title"')
-        browser.wait('document.documentElement.lang === "ne"')
+        browser.wait('document.documentElement?.lang === "ne"')
         checks.append('Careers alias preserves language and anchor through redirect')
         browser.call('Emulation.setEmulatedMedia', {'features': [{'name': 'prefers-reduced-motion', 'value': 'reduce'}]})
         browser.call('Page.navigate', {'url': f'{base}/?lang=en'})
